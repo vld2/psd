@@ -6,6 +6,14 @@ body, ul {
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+li {
+    list-style: none;
+}
 
 .center {
     margin:auto;
@@ -44,18 +52,60 @@ body, ul {
     display: flex;
     align-items: center;
 }
+#header-menu{
+    background: #4ccfc1;
+    padding: 10px 15px;
+}
+
+#header-menu ul {
+    justify-content: space-between;
+}
+
+#header-menu ul li a {
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+}
+
+#header-menu ul li :first-child a {
+    padding-left: 0;
+}
+
+#header-menu ul li :last-child a {
+    padding-right: 0;
+    border: 0;
+}
 
 @media (max-width:1025px) {
     #header-top {
         padding: 15px;}
 }
+@media (max-width:940px) {
+    #header-menu ul li a {
+        border: none;
+    }
 
+    #header-menu ul {
+        justify-content: center;
+
+    }
+}
 @media (max-width:670px) {
     #header-top {
         flex-direction: column;
     }
     #search {
         margin: 15px;
+    }
+}
+@media (max-width:530px) {
+    #header-menu ul li a,
+    #header-menu ul li {
+        width: 100%;
+        text-align: center;
+    }
+    #header-menu ul li a {
+        padding: 5px 15px !important;
+        display: block;
     }
 }
     
