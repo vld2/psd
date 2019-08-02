@@ -188,7 +188,31 @@ i, h3 {
 
 #footer-top {
     justify-content: space-between;
+    padding: 35px 15px 20px 15px;
 }
+
+#footer-top h2{
+    color: #fff;
+    margin-top: 0px;
+}
+
+#footer-top a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+    display: block
+}
+
+#footer-bottom {
+    background:#2da89b; 
+    text-align: center;
+    padding: 15px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff; 
+}
+
+
+
+
 
 
 
@@ -242,5 +266,10 @@ i, h3 {
         padding: 5px 15px !important;
         display: block;
     }
+    #footer-top .nav {
+        margin: 15px;
+    }
+    #footer-top {
+        justify-content: center;
+    }
 }
-    
